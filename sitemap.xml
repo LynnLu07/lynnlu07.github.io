@@ -3,22 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2019-09-25T23:14:51+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/</loc>
-    <lastmod>2019-09-15T23:14:51+08:00</lastmod>
+    <lastmod>2019-09-25T23:14:51+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/posts/</loc>
-    <lastmod>2019-09-15T23:14:51+08:00</lastmod>
+    <lastmod>2019-09-25T23:14:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</loc>
-    <lastmod>2019-09-15T23:14:51+08:00</lastmod>
+    <loc>http://example.org/posts/html%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2019-09-22T01:31:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://example.org/posts/%E7%AC%AC%E4%B8%89%E7%AF%87/</loc>
+    <lastmod>2019-09-22T00:05:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</loc>
     <lastmod>2019-09-15T23:14:51+08:00</lastmod>
   </url>
   
