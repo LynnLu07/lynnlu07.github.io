@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.58.2 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="Lynn Lu">
+<meta name="keywords" content="">
+<meta name="description" content="1. &lt;a&gt;标签 作用：可以创建一个到其他网页、文件、同一页面内的位置、电子邮件地址或任何其他URL的超链接。
+&lt;a&gt;的属性：href, target, download.
+href属性的用法  跳转外部页面，如
+&lt;a href=&quot;https://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;http://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;//baidu.com&quot;&gt;baidu无协议网址&lt;/a&gt;  跳转内部锚点，使用锚点#，此时点击&lt;a&gt;标签不发送请求，如 &lt;a href=&quot;#aaa&quot;&gt;aaa&lt;a/&gt;，此时点击a链接页面锚点变为aaa，使用锚点可以实现当前页面的跳转；
+ &lt;a&gt;标签href内容为空，如 &lt;a href=&quot;&quot;&gt;baidu&lt;/a&gt;,点击a链接会刷新当前页面；
+ 类似 &lt;a href=&quot;name=xxx&quot;&gt;a链接&lt;/a&gt; 的&lt;a&gt;标签，再点击后会发送一个GET请求，请求的值就是 name=xxx
+ 使用路径作为href的值， &lt;a href=&quot;main.html&quot;&gt;main&lt;/a&gt;，点击后会跳转到 main.html；
+ 伪协议： &lt;a href=&quot;javascript: alert(1);&quot;&gt;&lt;/a&gt; 会执行href中的JavaScript代码，&lt;a href=&quot;javascript:;&quot;&gt;&lt;/a&gt;将不会执行任何操作；
+ 跳转到邮箱电话，如
+&lt;a href=&quot;mailto:lynnlzy@hotmail.com&quot;&gt;发邮件给Lynn&lt;/a&gt; &lt;a href=&quot;tel:139653176627&quot;&gt;拨打热线&lt;/a&gt;   target属性的用法  _blank：在新窗口打开，如 &lt;a href=&quot;https://baidu.com&quot; target=&quot;_blank&quot;&gt;baidu&lt;/a&gt;则会在新窗口打开百度页面。 _self：加载当前页面，如果没有指定属性，则此值为默认； _top： 加载响应进入顶层页面，如果没有父级框架或页面，效果与 _self相同； _parent：在父级页面打开地址。  download属性的用法  指示浏览器下载URL，保存到本地。  2. &lt;img&gt;标签 &lt;img&gt;的属性：alt, width, height, scr.">
+
+
+<meta property="og:description" content="1. &lt;a&gt;标签 作用：可以创建一个到其他网页、文件、同一页面内的位置、电子邮件地址或任何其他URL的超链接。
+&lt;a&gt;的属性：href, target, download.
+href属性的用法  跳转外部页面，如
+&lt;a href=&quot;https://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;http://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;//baidu.com&quot;&gt;baidu无协议网址&lt;/a&gt;  跳转内部锚点，使用锚点#，此时点击&lt;a&gt;标签不发送请求，如 &lt;a href=&quot;#aaa&quot;&gt;aaa&lt;a/&gt;，此时点击a链接页面锚点变为aaa，使用锚点可以实现当前页面的跳转；
+ &lt;a&gt;标签href内容为空，如 &lt;a href=&quot;&quot;&gt;baidu&lt;/a&gt;,点击a链接会刷新当前页面；
+ 类似 &lt;a href=&quot;name=xxx&quot;&gt;a链接&lt;/a&gt; 的&lt;a&gt;标签，再点击后会发送一个GET请求，请求的值就是 name=xxx
+ 使用路径作为href的值， &lt;a href=&quot;main.html&quot;&gt;main&lt;/a&gt;，点击后会跳转到 main.html；
+ 伪协议： &lt;a href=&quot;javascript: alert(1);&quot;&gt;&lt;/a&gt; 会执行href中的JavaScript代码，&lt;a href=&quot;javascript:;&quot;&gt;&lt;/a&gt;将不会执行任何操作；
+ 跳转到邮箱电话，如
+&lt;a href=&quot;mailto:lynnlzy@hotmail.com&quot;&gt;发邮件给Lynn&lt;/a&gt; &lt;a href=&quot;tel:139653176627&quot;&gt;拨打热线&lt;/a&gt;   target属性的用法  _blank：在新窗口打开，如 &lt;a href=&quot;https://baidu.com&quot; target=&quot;_blank&quot;&gt;baidu&lt;/a&gt;则会在新窗口打开百度页面。 _self：加载当前页面，如果没有指定属性，则此值为默认； _top： 加载响应进入顶层页面，如果没有父级框架或页面，效果与 _self相同； _parent：在父级页面打开地址。  download属性的用法  指示浏览器下载URL，保存到本地。  2. &lt;img&gt;标签 &lt;img&gt;的属性：alt, width, height, scr.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML常用标签">
+<meta name="twitter:title" content="HTML常用标签">
+<meta property="og:url" content="https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+<meta property="twitter:url" content="https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+<meta property="og:site_name" content="Lynn的博客">
+<meta property="og:description" content="1. &lt;a&gt;标签 作用：可以创建一个到其他网页、文件、同一页面内的位置、电子邮件地址或任何其他URL的超链接。
+&lt;a&gt;的属性：href, target, download.
+href属性的用法  跳转外部页面，如
+&lt;a href=&quot;https://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;http://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;//baidu.com&quot;&gt;baidu无协议网址&lt;/a&gt;  跳转内部锚点，使用锚点#，此时点击&lt;a&gt;标签不发送请求，如 &lt;a href=&quot;#aaa&quot;&gt;aaa&lt;a/&gt;，此时点击a链接页面锚点变为aaa，使用锚点可以实现当前页面的跳转；
+ &lt;a&gt;标签href内容为空，如 &lt;a href=&quot;&quot;&gt;baidu&lt;/a&gt;,点击a链接会刷新当前页面；
+ 类似 &lt;a href=&quot;name=xxx&quot;&gt;a链接&lt;/a&gt; 的&lt;a&gt;标签，再点击后会发送一个GET请求，请求的值就是 name=xxx
+ 使用路径作为href的值， &lt;a href=&quot;main.html&quot;&gt;main&lt;/a&gt;，点击后会跳转到 main.html；
+ 伪协议： &lt;a href=&quot;javascript: alert(1);&quot;&gt;&lt;/a&gt; 会执行href中的JavaScript代码，&lt;a href=&quot;javascript:;&quot;&gt;&lt;/a&gt;将不会执行任何操作；
+ 跳转到邮箱电话，如
+&lt;a href=&quot;mailto:lynnlzy@hotmail.com&quot;&gt;发邮件给Lynn&lt;/a&gt; &lt;a href=&quot;tel:139653176627&quot;&gt;拨打热线&lt;/a&gt;   target属性的用法  _blank：在新窗口打开，如 &lt;a href=&quot;https://baidu.com&quot; target=&quot;_blank&quot;&gt;baidu&lt;/a&gt;则会在新窗口打开百度页面。 _self：加载当前页面，如果没有指定属性，则此值为默认； _top： 加载响应进入顶层页面，如果没有父级框架或页面，效果与 _self相同； _parent：在父级页面打开地址。  download属性的用法  指示浏览器下载URL，保存到本地。  2. &lt;img&gt;标签 &lt;img&gt;的属性：alt, width, height, scr.">
+<meta name="twitter:description" content="1. &lt;a&gt;标签 作用：可以创建一个到其他网页、文件、同一页面内的位置、电子邮件地址或任何其他URL的超链接。
+&lt;a&gt;的属性：href, target, download.
+href属性的用法  跳转外部页面，如
+&lt;a href=&quot;https://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;http://baidu.com&quot;&gt;baidu超链接&lt;/a&gt; &lt;a href=&quot;//baidu.com&quot;&gt;baidu无协议网址&lt;/a&gt;  跳转内部锚点，使用锚点#，此时点击&lt;a&gt;标签不发送请求，如 &lt;a href=&quot;#aaa&quot;&gt;aaa&lt;a/&gt;，此时点击a链接页面锚点变为aaa，使用锚点可以实现当前页面的跳转；
+ &lt;a&gt;标签href内容为空，如 &lt;a href=&quot;&quot;&gt;baidu&lt;/a&gt;,点击a链接会刷新当前页面；
+ 类似 &lt;a href=&quot;name=xxx&quot;&gt;a链接&lt;/a&gt; 的&lt;a&gt;标签，再点击后会发送一个GET请求，请求的值就是 name=xxx
+ 使用路径作为href的值， &lt;a href=&quot;main.html&quot;&gt;main&lt;/a&gt;，点击后会跳转到 main.html；
+ 伪协议： &lt;a href=&quot;javascript: alert(1);&quot;&gt;&lt;/a&gt; 会执行href中的JavaScript代码，&lt;a href=&quot;javascript:;&quot;&gt;&lt;/a&gt;将不会执行任何操作；
+ 跳转到邮箱电话，如
+&lt;a href=&quot;mailto:lynnlzy@hotmail.com&quot;&gt;发邮件给Lynn&lt;/a&gt; &lt;a href=&quot;tel:139653176627&quot;&gt;拨打热线&lt;/a&gt;   target属性的用法  _blank：在新窗口打开，如 &lt;a href=&quot;https://baidu.com&quot; target=&quot;_blank&quot;&gt;baidu&lt;/a&gt;则会在新窗口打开百度页面。 _self：加载当前页面，如果没有指定属性，则此值为默认； _top： 加载响应进入顶层页面，如果没有父级框架或页面，效果与 _self相同； _parent：在父级页面打开地址。  download属性的用法  指示浏览器下载URL，保存到本地。  2. &lt;img&gt;标签 &lt;img&gt;的属性：alt, width, height, scr.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-09-25T23:14:51">
+  
+  
+    <meta property="article:modified_time" content="2019-09-25T23:14:51">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/83a90fdd87bd8f10ce3f91f08cc43f63?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/83a90fdd87bd8f10ce3f91f08cc43f63?s=640">
+
+
+    <title>HTML常用标签</title>
+
+    <link rel="icon" href="https://github.com/LynnLu07/lynnlu07.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://github.com/LynnLu07/lynnlu07.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://github.com/LynnLu07/lynnlu07.github.io/">Lynn的博客</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://github.com/LynnLu07/lynnlu07.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/83a90fdd87bd8f10ce3f91f08cc43f63?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://github.com/LynnLu07/lynnlu07.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/83a90fdd87bd8f10ce3f91f08cc43f63?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Lynn Lu</h4>
+        
+          <h5 class="sidebar-profile-bio">It always seems impossible until it is done.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/LynnLu07/lynnlu07.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/LynnLu07/lynnlu07.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/LynnLu07/lynnlu07.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/LynnLu07/lynnlu07.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/LynnLu07/lynnlu07.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/LynnLu07" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/LynnLu07/lynnlu07.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      HTML常用标签
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-09-25T23:14:51&#43;08:00">
+        
+  September 25, 2019
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<h3 id="1-a-标签">1. <code>&lt;a&gt;</code>标签</h3>
+
+<p>作用：可以创建一个到其他网页、文件、同一页面内的位置、电子邮件地址或任何其他URL的超链接。</p>
+
+<p><code>&lt;a&gt;</code>的属性：<code>href, target, download</code>.</p>
+
+<h4 id="href属性的用法">href属性的用法</h4>
+
+<ul>
+<li><p>跳转外部页面，如</p>
+
+<pre><code>&lt;a href=&quot;https://baidu.com&quot;&gt;baidu超链接&lt;/a&gt;
+&lt;a href=&quot;http://baidu.com&quot;&gt;baidu超链接&lt;/a&gt;
+&lt;a href=&quot;//baidu.com&quot;&gt;baidu无协议网址&lt;/a&gt;
+</code></pre></li>
+
+<li><p>跳转内部锚点，使用锚点#，此时点击<code>&lt;a&gt;</code>标签不发送请求，如 <code>&lt;a href=&quot;#aaa&quot;&gt;aaa&lt;a/&gt;</code>，此时点击a链接页面锚点变为aaa，使用锚点可以实现当前页面的跳转；</p></li>
+
+<li><p><code>&lt;a&gt;</code>标签href内容为空，如 <code>&lt;a href=&quot;&quot;&gt;baidu&lt;/a&gt;</code>,点击a链接会刷新当前页面；</p></li>
+
+<li><p>类似 <code>&lt;a href=&quot;name=xxx&quot;&gt;a链接&lt;/a&gt;</code> 的<code>&lt;a&gt;</code>标签，再点击后会发送一个GET请求，请求的值就是 <code>name=xxx</code></p></li>
+
+<li><p>使用路径作为href的值， <code>&lt;a href=&quot;main.html&quot;&gt;main&lt;/a&gt;</code>，点击后会跳转到 <code>main.html</code>；</p></li>
+
+<li><p>伪协议： <code>&lt;a href=&quot;javascript: alert(1);&quot;&gt;&lt;/a&gt;</code> 会执行href中的JavaScript代码，<code>&lt;a href=&quot;javascript:;&quot;&gt;&lt;/a&gt;</code>将不会执行任何操作；</p></li>
+
+<li><p>跳转到邮箱电话，如</p>
+
+<pre><code>&lt;a href=&quot;mailto:lynnlzy@hotmail.com&quot;&gt;发邮件给Lynn&lt;/a&gt;
+&lt;a href=&quot;tel:139653176627&quot;&gt;拨打热线&lt;/a&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="target属性的用法">target属性的用法</h4>
+
+<ul>
+<li><code>_blank</code>：在新窗口打开，如 <code>&lt;a href=&quot;https://baidu.com&quot; target=&quot;_blank&quot;&gt;baidu&lt;/a&gt;</code>则会在新窗口打开百度页面。</li>
+<li><code>_self</code>：加载当前页面，如果没有指定属性，则此值为默认；</li>
+<li><code>_top</code>： 加载响应进入顶层页面，如果没有父级框架或页面，效果与 <code>_self</code>相同；</li>
+<li><code>_parent</code>：在父级页面打开地址。</li>
+</ul>
+
+<h4 id="download属性的用法">download属性的用法</h4>
+
+<ul>
+<li>指示浏览器下载URL，保存到本地。</li>
+</ul>
+
+<h3 id="2-img-标签">2. <code>&lt;img&gt;</code>标签</h3>
+
+<p><code>&lt;img&gt;</code>的属性：alt, width, height, scr.</p>
+
+<h4 id="alt属性的用法">alt属性的用法</h4>
+
+<p>用来设定图片的文字说明。图片不显示时（比如下载失败，或用户关闭图片加载），图片的位置上会显示该文本。
+<code>&lt;img src=&quot;404.jpg&quot; alt=&quot;示例图片&quot;&gt;</code>alt是图片的说明。图片下载失败时，浏览器会在图片位置，显示文字“示例图片”。</p>
+
+<h4 id="width和height属性的用法">width和height属性的用法</h4>
+
+<p>如果只设置一个，另一个没有设置，浏览器会根据图片的原始大小，自动设置对应比例的图片宽度或高度。</p>
+
+<h4 id="响应式">响应式</h4>
+
+<p><code>&lt;style&gt;img{max-width:100%}&lt;/style&gt;</code>使图片更兼容。</p>
+
+<h3 id="3-table-标签">3.<code>&lt;table&gt;</code>标签</h3>
+
+<p><code>&lt;thead&gt;、&lt;tbody&gt;、&lt;tfoot&gt;</code>都都是<code>&lt;table&gt;</code>的一级子元素，分别表示表头、表体和表尾。</p>
+
+<pre><code>&lt;table&gt;
+    &lt;thead&gt;... ...&lt;/thead&gt;
+    &lt;tbody&gt;... ...&lt;/tbody&gt;
+    &lt;tfoot&gt;... ...&lt;/tfoot&gt;
+&lt;/table&gt;        
+</code></pre>
+
+<p><code>&lt;tr&gt;</code>标签表示表格的一行（table row）。<code>&lt;th&gt;</code>和<code>&lt;td&gt;</code>都用来定义表格的单元格。其中，<code>&lt;th&gt;</code>是标题单元格，<code>&lt;td&gt;</code>是数据单元格。</p>
+
+<pre><code class="language-&lt;table&gt;">  &lt;tr&gt;
+    &lt;th&gt;学号&lt;/th&gt;&lt;th&gt;姓名&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;001&lt;/td&gt;&lt;td&gt;小明&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;002&lt;/td&gt;&lt;td&gt;小林&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<p>上面代码中，表格一共有三行。第一行是标题行，所以使用<code>&lt;th&gt;</code>；第二行和第三行是数据行，所以使用<code>&lt;td&gt;</code>。
+<img src="https://user-gold-cdn.xitu.io/2019/9/25/16d64060e7594393?w=602&amp;h=300&amp;f=png&amp;s=5010" alt="" /></p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://github.com/LynnLu07/lynnlu07.github.io/2019/10/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" data-tooltip="CSS知识总结">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E7%AC%94%E8%AE%B0/" data-tooltip="HTML笔记">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 Lynn Lu. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://github.com/LynnLu07/lynnlu07.github.io/2019/10/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" data-tooltip="CSS知识总结">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E7%AC%94%E8%AE%B0/" data-tooltip="HTML笔记">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2FLynnLu07%2Flynnlu07.github.io%2F2019%2F09%2Fhtml%25E5%25B8%25B8%25E7%2594%25A8%25E6%25A0%2587%25E7%25AD%25BE%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fgithub.com%2FLynnLu07%2Flynnlu07.github.io%2F2019%2F09%2Fhtml%25E5%25B8%25B8%25E7%2594%25A8%25E6%25A0%2587%25E7%25AD%25BE%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2FLynnLu07%2Flynnlu07.github.io%2F2019%2F09%2Fhtml%25E5%25B8%25B8%25E7%2594%25A8%25E6%25A0%2587%25E7%25AD%25BE%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/83a90fdd87bd8f10ce3f91f08cc43f63?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Lynn Lu</h4>
+    
+      <div id="about-card-bio">It always seems impossible until it is done.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Beijing
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://github.com/LynnLu07/lynnlu07.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://github.com/LynnLu07/lynnlu07.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
