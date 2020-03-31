@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tag2 on Lynn的小屋</title>
+    <title>tag2 on Lynn的博客</title>
     <link>https://lynnlu07.github.io/tags/tag2/</link>
-    <description>Recent content in tag2 on Lynn的小屋</description>
+    <description>Recent content in tag2 on Lynn的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2019 16:23:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 20:59:44 +0800</lastBuildDate>
     
 	<atom:link href="https://lynnlu07.github.io/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JQuery入门笔记</title>
+      <link>https://lynnlu07.github.io/2020/02/jquery%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 03 Feb 2020 20:59:44 +0800</pubDate>
+      
+      <guid>https://lynnlu07.github.io/2020/02/jquery%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JS函数的执行时机</title>
+      <link>https://lynnlu07.github.io/2019/11/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Fri, 29 Nov 2019 20:56:41 +0800</pubDate>
+      
+      <guid>https://lynnlu07.github.io/2019/11/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>JS的基本语法</title>

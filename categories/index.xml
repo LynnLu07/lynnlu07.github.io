@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Lynn的小屋</title>
+    <title>Categories on Lynn的博客</title>
     <link>https://lynnlu07.github.io/categories/</link>
-    <description>Recent content in Categories on Lynn的小屋</description>
+    <description>Recent content in Categories on Lynn的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2019 16:23:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 20:59:44 +0800</lastBuildDate>
     
 	<atom:link href="https://lynnlu07.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>category</title>
       <link>https://lynnlu07.github.io/categories/category/</link>
-      <pubDate>Fri, 01 Nov 2019 16:23:47 +0800</pubDate>
+      <pubDate>Mon, 03 Feb 2020 20:59:44 +0800</pubDate>
       
       <guid>https://lynnlu07.github.io/categories/category/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>subcategory</title>
       <link>https://lynnlu07.github.io/categories/subcategory/</link>
-      <pubDate>Fri, 01 Nov 2019 16:23:47 +0800</pubDate>
+      <pubDate>Mon, 03 Feb 2020 20:59:44 +0800</pubDate>
       
       <guid>https://lynnlu07.github.io/categories/subcategory/</guid>
       <description></description>
