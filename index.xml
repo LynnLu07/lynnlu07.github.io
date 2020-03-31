@@ -6,19 +6,10 @@
     <description>Recent content on Lynn的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2020 16:23:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2019 16:05:51 +0800</lastBuildDate>
     
 	<atom:link href="https://lynnlu07.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>JS的基本语法</title>
-      <link>https://lynnlu07.github.io/2020/03/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
-      <pubDate>Tue, 31 Mar 2020 16:23:47 +0800</pubDate>
-      
-      <guid>https://lynnlu07.github.io/2020/03/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>JavaScript的诞生</title>
@@ -119,6 +110,15 @@ href属性的用法   跳转外部页面，如
       
       <guid>https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
       <description>大家好 我的博客开通了，希望可以写出好文章给大家看。</description>
+    </item>
+    
+    <item>
+      <title>JS的基本语法</title>
+      <link>https://lynnlu07.github.io/1/01/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lynnlu07.github.io/1/01/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <description></description>
     </item>
     
   </channel>
