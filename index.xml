@@ -6,10 +6,24 @@
     <description>Recent content on Lynn的小屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Oct 2019 16:05:51 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 18:08:21 +0800</lastBuildDate>
     
 	<atom:link href="https://lynnlu07.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS对象基本用法</title>
+      <link>https://lynnlu07.github.io/2019/11/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Mon, 11 Nov 2019 18:08:21 +0800</pubDate>
+      
+      <guid>https://lynnlu07.github.io/2019/11/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>1. 声明对象的两种语法 let obj={&#39;name&#39;:&#39;David&#39;, &#39;age&#39;:10} let obj= new Object({&#39;name&#39;:&amp;quot;David&amp;quot;}) console.log({&#39;name&#39;:&#39;David&#39;, &#39;age&#39;:10}) 键名可以包含任何字符，但都是字符串。 属性名加上中括号[]就可以成为变量。
+2. 如何删除对象的属性 delete obj.xxx 或者 delete obj[&#39;xxx&#39;]删除obj的xxx属性
+delete删除属性值和属性名，undefined只删除属性值。
+&#39;xxx&#39; in obj === false表示不含有属性名。 &#39;xxx&#39; in obj &amp;amp;&amp;amp; obj.xxx === undefined表示含有属性名，但值为undefined。
+3. 如何查看对象的属性 obj[&#39;key&#39;]查看单个属性。 Object.keys(obj)可以查看自身所有属性。 console.dir(obj)查看自身和共有属性。 obj.hasOwnProperty(&#39;toString&#39;)判断一个属性是自身的还是共有的。
+4. 如何修改或增加对象的属性  直接赋值  let obj = {name:&#39;David&#39;} obj.name = &#39;David&#39; obj[&#39;name&#39;= &#39;David&#39;] obj[&#39;na&#39;+&#39;me&#39;= &#39;David&#39;] let key = &#39;name&#39;; obj[key] = &#39;David&#39;  批量赋值 Object.assign(obj, {xxx,yyy,zzz})  更改共有属性 共有属性无法通过自身修改或增加。  5.</description>
+    </item>
     
     <item>
       <title>JavaScript的诞生</title>
