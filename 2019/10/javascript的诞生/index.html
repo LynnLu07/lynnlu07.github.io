@@ -8,25 +8,37 @@
 <meta name="generator" content="Hugo 0.68.3 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="Lynn Lu">
 <meta name="keywords" content="">
-<meta name="description" content="大家好 我的博客开通了，希望可以写出好文章给大家看。">
+<meta name="description" content="1994年，网景公司发布了一款浏览器，只能用来浏览，没有与访问者互动的能力，因此，网景公司需要一种网页脚本语言实现网络浏览器与网页互动。恰逢Sun公司公布的Java正式冲击市场，反响热烈。网景公司便与Sun公司合作，允许Java程序以小程序（applet）的形式在浏览器运行。但是，如果将Java作为脚本语言嵌入网页，会导致HTML页面过于复杂，所以，网景公司要求布兰登（Brendan Eich）开发出能够完全适用的语言，必须看着与Java类似，但更加简单。
+布兰登基于C语言的基本语法，借鉴了Java语言的数据类型和内存管理，借鉴Scheme语言（将函数提升到&quot;第一等公民&quot;first class的地位），又借鉴了Self语言（使用基于原型prototype的继承机制），用短短十天的时间设计出js的最初版本，由于设计阶段的仓促，JavaScript存在了许多遗留缺陷。同时，作为历史上第一例同时结合函数式编程和面向对象编程的语言，它没有涉及先例可以参考。
+1996年8月，微软公司宣布推出自己的脚本语言Jscript。网景公司为了迎战微软，决定申请JavasScript的国际标准。。Ecma国际（前身为欧洲计算机制造商协会）创建了ECMA-262标准（ECMAScript）。1997年6月，正式颁布。因此，JavaScript的语言规格还没来及调整，就固化了。
+参考来源 JavaScript 的历史  JavaScript 诞生记 JavaScript 的10个设计缺陷">
 
 
-<meta property="og:description" content="大家好 我的博客开通了，希望可以写出好文章给大家看。">
+<meta property="og:description" content="1994年，网景公司发布了一款浏览器，只能用来浏览，没有与访问者互动的能力，因此，网景公司需要一种网页脚本语言实现网络浏览器与网页互动。恰逢Sun公司公布的Java正式冲击市场，反响热烈。网景公司便与Sun公司合作，允许Java程序以小程序（applet）的形式在浏览器运行。但是，如果将Java作为脚本语言嵌入网页，会导致HTML页面过于复杂，所以，网景公司要求布兰登（Brendan Eich）开发出能够完全适用的语言，必须看着与Java类似，但更加简单。
+布兰登基于C语言的基本语法，借鉴了Java语言的数据类型和内存管理，借鉴Scheme语言（将函数提升到&quot;第一等公民&quot;first class的地位），又借鉴了Self语言（使用基于原型prototype的继承机制），用短短十天的时间设计出js的最初版本，由于设计阶段的仓促，JavaScript存在了许多遗留缺陷。同时，作为历史上第一例同时结合函数式编程和面向对象编程的语言，它没有涉及先例可以参考。
+1996年8月，微软公司宣布推出自己的脚本语言Jscript。网景公司为了迎战微软，决定申请JavasScript的国际标准。。Ecma国际（前身为欧洲计算机制造商协会）创建了ECMA-262标准（ECMAScript）。1997年6月，正式颁布。因此，JavaScript的语言规格还没来及调整，就固化了。
+参考来源 JavaScript 的历史  JavaScript 诞生记 JavaScript 的10个设计缺陷">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开博大吉">
-<meta name="twitter:title" content="开博大吉">
-<meta property="og:url" content="https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
-<meta property="twitter:url" content="https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+<meta property="og:title" content="JavaScript的诞生">
+<meta name="twitter:title" content="JavaScript的诞生">
+<meta property="og:url" content="https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
+<meta property="twitter:url" content="https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
 <meta property="og:site_name" content="Lynn的小屋">
-<meta property="og:description" content="大家好 我的博客开通了，希望可以写出好文章给大家看。">
-<meta name="twitter:description" content="大家好 我的博客开通了，希望可以写出好文章给大家看。">
+<meta property="og:description" content="1994年，网景公司发布了一款浏览器，只能用来浏览，没有与访问者互动的能力，因此，网景公司需要一种网页脚本语言实现网络浏览器与网页互动。恰逢Sun公司公布的Java正式冲击市场，反响热烈。网景公司便与Sun公司合作，允许Java程序以小程序（applet）的形式在浏览器运行。但是，如果将Java作为脚本语言嵌入网页，会导致HTML页面过于复杂，所以，网景公司要求布兰登（Brendan Eich）开发出能够完全适用的语言，必须看着与Java类似，但更加简单。
+布兰登基于C语言的基本语法，借鉴了Java语言的数据类型和内存管理，借鉴Scheme语言（将函数提升到&quot;第一等公民&quot;first class的地位），又借鉴了Self语言（使用基于原型prototype的继承机制），用短短十天的时间设计出js的最初版本，由于设计阶段的仓促，JavaScript存在了许多遗留缺陷。同时，作为历史上第一例同时结合函数式编程和面向对象编程的语言，它没有涉及先例可以参考。
+1996年8月，微软公司宣布推出自己的脚本语言Jscript。网景公司为了迎战微软，决定申请JavasScript的国际标准。。Ecma国际（前身为欧洲计算机制造商协会）创建了ECMA-262标准（ECMAScript）。1997年6月，正式颁布。因此，JavaScript的语言规格还没来及调整，就固化了。
+参考来源 JavaScript 的历史  JavaScript 诞生记 JavaScript 的10个设计缺陷">
+<meta name="twitter:description" content="1994年，网景公司发布了一款浏览器，只能用来浏览，没有与访问者互动的能力，因此，网景公司需要一种网页脚本语言实现网络浏览器与网页互动。恰逢Sun公司公布的Java正式冲击市场，反响热烈。网景公司便与Sun公司合作，允许Java程序以小程序（applet）的形式在浏览器运行。但是，如果将Java作为脚本语言嵌入网页，会导致HTML页面过于复杂，所以，网景公司要求布兰登（Brendan Eich）开发出能够完全适用的语言，必须看着与Java类似，但更加简单。
+布兰登基于C语言的基本语法，借鉴了Java语言的数据类型和内存管理，借鉴Scheme语言（将函数提升到&quot;第一等公民&quot;first class的地位），又借鉴了Self语言（使用基于原型prototype的继承机制），用短短十天的时间设计出js的最初版本，由于设计阶段的仓促，JavaScript存在了许多遗留缺陷。同时，作为历史上第一例同时结合函数式编程和面向对象编程的语言，它没有涉及先例可以参考。
+1996年8月，微软公司宣布推出自己的脚本语言Jscript。网景公司为了迎战微软，决定申请JavasScript的国际标准。。Ecma国际（前身为欧洲计算机制造商协会）创建了ECMA-262标准（ECMAScript）。1997年6月，正式颁布。因此，JavaScript的语言规格还没来及调整，就固化了。
+参考来源 JavaScript 的历史  JavaScript 诞生记 JavaScript 的10个设计缺陷">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-09-15T23:14:51">
+    <meta property="article:published_time" content="2019-10-28T16:05:51">
   
   
-    <meta property="article:modified_time" content="2019-09-15T23:14:51">
+    <meta property="article:modified_time" content="2019-10-28T16:05:51">
   
   
   
@@ -49,14 +61,14 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
 
 
-    <title>开博大吉</title>
+    <title>JavaScript的诞生</title>
 
     <link rel="icon" href="https://lynnlu07.github.io/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+    <link rel="canonical" href="https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -216,15 +228,15 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      开博大吉
+      JavaScript的诞生
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-09-15T23:14:51&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-10-28T16:05:51&#43;08:00">
         
-  September 15, 2019
+  October 28, 2019
 
       </time>
     
@@ -235,8 +247,13 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <h1 id="大家好">大家好</h1>
-<p>我的博客开通了，希望可以写出好文章给大家看。</p>
+              <p>1994年，网景公司发布了一款浏览器，只能用来浏览，没有与访问者互动的能力，因此，网景公司需要一种网页脚本语言实现网络浏览器与网页互动。恰逢Sun公司公布的Java正式冲击市场，反响热烈。网景公司便与Sun公司合作，允许Java程序以小程序（applet）的形式在浏览器运行。但是，如果将Java作为脚本语言嵌入网页，会导致HTML页面过于复杂，所以，网景公司要求布兰登（Brendan Eich）开发出能够完全适用的语言，必须看着与Java类似，但更加简单。</p>
+<p>布兰登基于C语言的基本语法，借鉴了Java语言的数据类型和内存管理，借鉴Scheme语言（将函数提升到&quot;第一等公民&quot;first class的地位），又借鉴了Self语言（使用基于原型prototype的继承机制），用短短十天的时间设计出js的最初版本，由于设计阶段的仓促，JavaScript存在了许多遗留缺陷。同时，作为历史上第一例同时结合函数式编程和面向对象编程的语言，它没有涉及先例可以参考。</p>
+<p>1996年8月，微软公司宣布推出自己的脚本语言Jscript。网景公司为了迎战微软，决定申请JavasScript的国际标准。。Ecma国际（前身为欧洲计算机制造商协会）创建了ECMA-262标准（ECMAScript）。1997年6月，正式颁布。因此，JavaScript的语言规格还没来及调整，就固化了。</p>
+<p>参考来源 <br>
+<a href="https://baike.baidu.com/item/javascript#4">JavaScript 的历史 </a>    <br>
+<a href="http://www.ruanyifeng.com/blog/2011/06/birth_of_javascript.html">JavaScript 诞生记</a> <br>
+<a href="http://www.ruanyifeng.com/blog/2011/06/10_design_defects_in_javascript.html">JavaScript 的10个设计缺陷</a></p>
 
               
             </div>
@@ -252,7 +269,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://lynnlu07.github.io/2019/09/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-github-pages-%E9%A2%84%E8%A7%88-html/" data-tooltip="如何使用 GitHub Pages 预览 HTML">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -260,7 +277,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://lynnlu07.github.io/2019/10/%E6%B5%85%E6%9E%90url%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8/" data-tooltip="浅析URL及其作用">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -278,19 +295,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -338,7 +355,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://lynnlu07.github.io/2019/09/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-github-pages-%E9%A2%84%E8%A7%88-html/" data-tooltip="如何使用 GitHub Pages 预览 HTML">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -346,7 +363,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://lynnlu07.github.io/2019/10/%E6%B5%85%E6%9E%90url%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8/" data-tooltip="浅析URL及其作用">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -364,19 +381,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://lynnlu07.github.io/2019/09/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://lynnlu07.github.io/2019/10/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -406,19 +423,19 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flynnlu07.github.io%2F2019%2F09%2F%25E5%25BC%2580%25E5%258D%259A%25E5%25A4%25A7%25E5%2590%2589%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flynnlu07.github.io%2F2019%2F10%2Fjavascript%25E7%259A%2584%25E8%25AF%259E%25E7%2594%259F%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Flynnlu07.github.io%2F2019%2F09%2F%25E5%25BC%2580%25E5%258D%259A%25E5%25A4%25A7%25E5%2590%2589%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Flynnlu07.github.io%2F2019%2F10%2Fjavascript%25E7%259A%2584%25E8%25AF%259E%25E7%2594%259F%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Flynnlu07.github.io%2F2019%2F09%2F%25E5%25BC%2580%25E5%258D%259A%25E5%25A4%25A7%25E5%2590%2589%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Flynnlu07.github.io%2F2019%2F10%2Fjavascript%25E7%259A%2584%25E8%25AF%259E%25E7%2594%259F%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -510,9 +527,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/lynnlu07.github.io\/2019\/09\/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89\/';
+          this.page.url = 'https:\/\/lynnlu07.github.io\/2019\/10\/javascript%E7%9A%84%E8%AF%9E%E7%94%9F\/';
           
-            this.page.identifier = '\/2019\/09\/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89\/'
+            this.page.identifier = '\/2019\/10\/javascript%E7%9A%84%E8%AF%9E%E7%94%9F\/'
           
         };
         (function() {
