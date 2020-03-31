@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lynn的博客</title>
@@ -49,9 +49,8 @@ JavaScript→style→layout→paint→composite
 content-box 宽度 width = content，不包含 padding 和 border
 border-box 宽度 width = content + padding + border
 一般使用border-box
-3.CSS布局 float布局 子元素加上float:left和width
-父元素加上.clearfox
-flex布局 justify-content: flex-start: 元素和容器的左端对齐。 flex-end: 元素和容器的右端对齐。 center: 元素在容器里居中。 space-between:元素之间保持相等的距离。 space-around:元素周围保持相等的距离。  align-items: flex-start: 元素与容器的顶部对齐。 flex-end: 元素与容器的底部对齐。 center: 元素纵向居中。 baseline: 元素在容器的基线位置显示。 stretch: 元素被拉伸以填满整个容器。  row: 元素摆放的方向和文字方向一致。 row-reverse: 元素摆放的方向和文字方向相反。 column: 元素从上放到下。 column-reverse: 元素从下放到上。  nowrap: 所有的元素都在一行。 wrap: 元素自动换成多行。 wrap-reverse: 元素自动换成逆序的多行   align-content: flex-start: 多行都集中在顶部。 flex-end: 多行都集中在底部。 center: 多行居中。 space-between: 行与行之间保持相等距离。 space-around: 每行的周围保持相等距离。 stretch: 每一行都被拉伸以填满容器。</description>
+3.CSS布局 float布局 子元素加上float:left和width 父元素加上.clearfox
+flex布局 justify-content: flex-start: 元素和容器的左端对齐。 flex-end: 元素和容器的右端对齐。 center: 元素在容器里居中。 space-between:元素之间保持相等的距离。 space-around:元素周围保持相等的距离。 align-items: flex-start: 元素与容器的顶部对齐。 flex-end: 元素与容器的底部对齐。 center: 元素纵向居中。 baseline: 元素在容器的基线位置显示。 stretch: 元素被拉伸以填满整个容器。 row: 元素摆放的方向和文字方向一致。 row-reverse: 元素摆放的方向和文字方向相反。 column: 元素从上放到下。 column-reverse: 元素从下放到上。 nowrap: 所有的元素都在一行。 wrap: 元素自动换成多行。 wrap-reverse: 元素自动换成逆序的多行 flex-flow:flex-drection flex wrap方向和换行</description>
     </item>
     
     <item>
@@ -62,14 +61,14 @@ flex布局 justify-content: flex-start: 元素和容器的左端对齐。 flex-e
       <guid>https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
       <description>1. &amp;lt;a&amp;gt;标签 作用：可以创建一个到其他网页、文件、同一页面内的位置、电子邮件地址或任何其他URL的超链接。
 &amp;lt;a&amp;gt;的属性：href, target, download.
-href属性的用法  跳转外部页面，如
-&amp;lt;a href=&amp;quot;https://baidu.com&amp;quot;&amp;gt;baidu超链接&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;http://baidu.com&amp;quot;&amp;gt;baidu超链接&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;//baidu.com&amp;quot;&amp;gt;baidu无协议网址&amp;lt;/a&amp;gt;  跳转内部锚点，使用锚点#，此时点击&amp;lt;a&amp;gt;标签不发送请求，如 &amp;lt;a href=&amp;quot;#aaa&amp;quot;&amp;gt;aaa&amp;lt;a/&amp;gt;，此时点击a链接页面锚点变为aaa，使用锚点可以实现当前页面的跳转；
- &amp;lt;a&amp;gt;标签href内容为空，如 &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;baidu&amp;lt;/a&amp;gt;,点击a链接会刷新当前页面；
- 类似 &amp;lt;a href=&amp;quot;name=xxx&amp;quot;&amp;gt;a链接&amp;lt;/a&amp;gt; 的&amp;lt;a&amp;gt;标签，再点击后会发送一个GET请求，请求的值就是 name=xxx
- 使用路径作为href的值， &amp;lt;a href=&amp;quot;main.html&amp;quot;&amp;gt;main&amp;lt;/a&amp;gt;，点击后会跳转到 main.html；
- 伪协议： &amp;lt;a href=&amp;quot;javascript: alert(1);&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; 会执行href中的JavaScript代码，&amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;将不会执行任何操作；
- 跳转到邮箱电话，如
-&amp;lt;a href=&amp;quot;mailto:lynnlzy@hotmail.com&amp;quot;&amp;gt;发邮件给Lynn&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;tel:139653176627&amp;quot;&amp;gt;拨打热线&amp;lt;/a&amp;gt;   target属性的用法  _blank：在新窗口打开，如 &amp;lt;a href=&amp;quot;https://baidu.com&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;baidu&amp;lt;/a&amp;gt;则会在新窗口打开百度页面。 _self：加载当前页面，如果没有指定属性，则此值为默认； _top： 加载响应进入顶层页面，如果没有父级框架或页面，效果与 _self相同； _parent：在父级页面打开地址。  download属性的用法  指示浏览器下载URL，保存到本地。  2. &amp;lt;img&amp;gt;标签 &amp;lt;img&amp;gt;的属性：alt, width, height, scr.</description>
+href属性的用法   跳转外部页面，如
+ &amp;lt;a href=&amp;quot;https://baidu.com&amp;quot;&amp;gt;baidu超链接&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;http://baidu.com&amp;quot;&amp;gt;baidu超链接&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;//baidu.com&amp;quot;&amp;gt;baidu无协议网址&amp;lt;/a&amp;gt;    跳转内部锚点，使用锚点#，此时点击&amp;lt;a&amp;gt;标签不发送请求，如 &amp;lt;a href=&amp;quot;#aaa&amp;quot;&amp;gt;aaa&amp;lt;a/&amp;gt;，此时点击a链接页面锚点变为aaa，使用锚点可以实现当前页面的跳转；
+  &amp;lt;a&amp;gt;标签href内容为空，如 &amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;baidu&amp;lt;/a&amp;gt;,点击a链接会刷新当前页面；
+  类似 &amp;lt;a href=&amp;quot;name=xxx&amp;quot;&amp;gt;a链接&amp;lt;/a&amp;gt; 的&amp;lt;a&amp;gt;标签，再点击后会发送一个GET请求，请求的值就是 name=xxx
+  使用路径作为href的值， &amp;lt;a href=&amp;quot;main.html&amp;quot;&amp;gt;main&amp;lt;/a&amp;gt;，点击后会跳转到 main.html；
+  伪协议： &amp;lt;a href=&amp;quot;javascript: alert(1);&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; 会执行href中的JavaScript代码，&amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;将不会执行任何操作；
+  跳转到邮箱电话，如
+ &amp;lt;a href=&amp;quot;mailto:lynnlzy@hotmail.com&amp;quot;&amp;gt;发邮件给Lynn&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;tel:139653176627&amp;quot;&amp;gt;拨打热线&amp;lt;/a&amp;gt;    target属性的用法   _blank：在新窗口打开，如 &amp;lt;a href=&amp;quot;https://baidu.com&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;baidu&amp;lt;/a&amp;gt;则会在新窗口打开百度页面。 _self：加载当前页面，如果没有指定属性，则此值为默认；  _top： 加载响应进入顶层页面，如果没有父级框架或页面，效果与 _self相同；  _parent：在父级页面打开地址。  download属性的用法  指示浏览器下载URL，保存到本地。  2.</description>
     </item>
     
     <item>
@@ -78,20 +77,9 @@ href属性的用法  跳转外部页面，如
       <pubDate>Sun, 22 Sep 2019 01:31:03 +0800</pubDate>
       
       <guid>https://github.com/LynnLu07/lynnlu07.github.io/2019/09/html%E7%AC%94%E8%AE%B0/</guid>
-      <description>HTML是谁发明的？ Tim Berners-Lee 李爵士
- HTML 起手应该写什么？ 文档类型hmtl，lang设置语言，head标签，body标签，字符编码UTF-8，content=&amp;ldquo;width=device-width, initial-scale=1.0&amp;rdquo;禁用缩放，content=&amp;ldquo;ie=edge&amp;rdquo;将引擎设为最新版，title标题。
-   常用的表章节的标签有哪些，分别是什么意思？ h1~h6 不同大小的标题，依次递减。 section 章节 article 文章 p 段落 main 主要内容 aside 旁支内容 header 头部 footer 脚部 div 区块
- 全局属性有哪些？ 全局属性是所有标签都具有的属性。
- class 规定元素的类名
- contenteditable 规定是否可编辑元素的内容
- hidden 规定对元素进行隐藏
- id 规定元素的唯一id
- style 规定元素的行内样式（inline style）
- tabindex 设置元素的tab键控制次序
- title 规定元素的额外信息（可在工具提示中显示）
- 常用的内容标签有哪些，分别是什么意思?
- ol+li (ordered list+list item) 有序列表
- ul+li (unordered list+list item)无序列表</description>
+      <description>  HTML是谁发明的？ Tim Berners-Lee 李爵士
+  HTML 起手应该写什么？ 文档类型hmtl，lang设置语言，head标签，body标签，字符编码UTF-8，content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;禁用缩放，content=&amp;quot;ie=edge&amp;quot;将引擎设为最新版，title标题。
+  常用的表章节的标签有哪些，分别是什么意思？   h1~h6 不同大小的标题，依次递减。 section 章节 article 文章 p 段落 main 主要内容 aside 旁支内容 header 头部 footer 脚部 div 区块  全局属性有哪些？ 全局属性是所有标签都具有的属性。   class 规定元素的类名 contenteditable 规定是否可编辑元素的内容 hidden 规定对元素进行隐藏 id 规定元素的唯一id style 规定元素的行内样式（inline style） tabindex 设置元素的tab键控制次序 title 规定元素的额外信息（可在工具提示中显示）  常用的内容标签有哪些，分别是什么意思?   ol+li (ordered list+list item) 有序列表 ul+li (unordered list+list item)无序列表 di+dt+dd (description list+term+data) dl表示一组术语的列。dt定义术语名，dd定义术语解释。 pre (preformatted)浏览器保留该标签内部原始的换行和空格，默认以等宽字体显示标签内容。 hr 水平线，它没有闭合标签。 br (break) 换行，没有闭合标签。 a (anchor) 链接 em (emphasis) 强调，浏览器会斜体显示。 strong 标签包含的内容具有很强的重要性，浏览器会粗体显示。 code 表示标签内容是计算机代码，浏览器会以等宽字体显示。如果需要表示多行代码，code标签必须放在pre标签内部，code本身仅表示一行代码。 q (quote) 引用，有cite属性，浏览器斜体显示，添加半角的双引号，用于少量文字引用。 blockquote 引用，有cite属性，浏览器斜体显，用于大量文字引用示。  </description>
     </item>
     
     <item>
